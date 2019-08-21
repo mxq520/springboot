@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.7.RELEASE</version>
+  </parent>
+  <groupId>com.mxq</groupId>
+  <artifactId>21-spring-boot-devtools</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+  	<java.version>1.8</java.version>
+  </properties>
+  
+  <dependencies>
+  	<!-- springboot的web启动器 -->
+  	<dependency>
+	  	<groupId>org.springframework.boot</groupId>
+	  	<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	
+  	<!-- springboot的thymeleaf启动器 -->
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+  	</dependency>
+  	
+  	<!-- Devtools的坐标 -->
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-devtools</artifactId>
+  		<optional>true</optional><!-- true表示当有项目继承该项目时，当前依赖不向下传递 -->
+  	</dependency>
+  </dependencies>
+  
+</project>
