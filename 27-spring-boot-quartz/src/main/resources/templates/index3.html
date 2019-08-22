@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>Thymeleaf入门2</title>
+</head>
+<body>
+	<table border="1" >
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>age</th>
+			<th>index</th>
+			<th>size</th>
+			<th>count</th>
+			<th>even</th>
+			<th>odd</th>
+			<th>first</th>
+			<th>lase</th>
+		</tr>
+		<tr th:each="u,var:${list}">
+			<td th:text="${u.userid}"></td>
+			<td th:text="${u.username}"></td>
+			<td th:text="${u.userage}"></td>
+			<td th:text="${var.index}"></td>
+			<td th:text="${var.size}"></td>
+			<td th:text="${var.count}"></td>
+			<td th:text="${var.even}"></td>
+			<td th:text="${var.odd}"></td>
+			<td th:text="${var.first}"></td>
+			<td th:text="${var.last}"></td>
+		</tr>
+	</table>
+	
+	
+</body>
+</html>
